@@ -4,12 +4,12 @@ import java.util.Scanner;
 public class Matriz {
     public int nLinhas;
     public int nColunas;
-    public int[][] matriz;
+    public double[][] matriz;
 
     public Matriz(int nLinhas, int nColunas){
         this.nLinhas = nLinhas;
         this.nColunas = nColunas;
-        this.matriz = new int[nLinhas][nColunas];
+        this.matriz = new double[nLinhas][nColunas];
     }
 
     public void MakeMatriz(){
