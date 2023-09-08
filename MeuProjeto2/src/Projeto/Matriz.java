@@ -27,7 +27,7 @@ public class Matriz {
         String strMatriz = "\n";
         for(int i = 0; i < this.nLinhas; i++){
             for (int j = 0; j < this.nColunas; j ++){
-                strMatriz += this.matriz[i][j] + "\t"; 
+                strMatriz += String.format("%.2f\t",this.matriz[i][j]); 
             }
             strMatriz += "\n";
         }

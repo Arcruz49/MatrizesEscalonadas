@@ -5,8 +5,12 @@ public class Escalonamento {
     public static Matriz MatrizEscalonada(Matriz mat){
         for(int i = 0; i < mat.nLinhas; i ++){
             if(!PivoIs1(mat,i,i)){
+                double aux = mat.matriz[i][i];
                 for(int j = 0; j < mat.nColunas; j++){
-                    mat.matriz[i][j] = mat.matriz[i][j] / mat.matriz[i][i];
+                    mat.matriz[i][j] = mat.matriz[i][j] / aux;
+
+                    //System.out.println(String.format("mat.matriz[i][j] = %f, mat.matriz[i][i] = %f",
+                    //mat.matriz[i][j], mat.matriz[i][i]));
                 }
             }
         }
